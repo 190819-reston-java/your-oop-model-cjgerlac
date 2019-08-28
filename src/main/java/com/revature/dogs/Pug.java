@@ -4,26 +4,25 @@ public class Pug extends Dogs implements Flatface {
 
 	public static int pugCounter = 0;
 	
-	public Pug(boolean swim, String name, String color, String breed) {
+	public Pug(boolean swim, String breed, String name, String color) {
 
-		super(false, name, color, breed);
+		super(false, breed, name, color);
 		pugCounter++;
 	}
 	
-	public Pug(boolean swim, String name, String color) {
+	public Pug(boolean swim, String breed, String name) {
 		
-		super(false, name, color);
+		super(false, breed, name);
 		pugCounter++;
 	}
 	
-	public Pug(boolean swim, String name) {
-		super(false, name);
+	public Pug(boolean swim, String breed) {
+		super(false, breed);
 		pugCounter++;
 	}
 	
 	public Pug(boolean swim) {
-		super(false);
-		pugCounter++;
+		this(false, "Pug");
 	}
 	
 	public Pug() {

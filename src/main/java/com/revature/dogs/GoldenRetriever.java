@@ -4,27 +4,26 @@ public class GoldenRetriever extends Dogs {
 
 	public static int goldCounter = 0;
 	
-	public GoldenRetriever(boolean swim, String name, String color, String breed) {
+	public GoldenRetriever(boolean swim, String breed, String name, String color) {
 	
-		super(true, name, color, breed);
+		super(true, breed, name, color);
 		goldCounter++;
 }
-	public GoldenRetriever(boolean swim, String name, String color) {
+	public GoldenRetriever(boolean swim, String breed, String name) {
 		
-		super(true, name, color);
+		super(true, breed, name);
 		goldCounter++;
 	}
 	
-	public GoldenRetriever(boolean swim, String name) {
+	public GoldenRetriever(boolean swim, String breed) {
 		
-		super(true, name);
+		super(true, breed);
 		goldCounter++;
 	}
 	
 	public GoldenRetriever(boolean swim) {
 		
-		super(true);
-		goldCounter++;
+		this(true, "Golden Retriever");
 	}
 	
 	public GoldenRetriever() {

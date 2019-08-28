@@ -7,7 +7,7 @@ public abstract class Dogs {
 	private String breed;
 	private boolean swim;
 	
-	public Dogs(boolean swim, String name, String color, String breed) {
+	public Dogs(boolean swim, String breed, String name, String color) {
 		
 		super();
 		this.name = name;
@@ -16,23 +16,23 @@ public abstract class Dogs {
 		this.swim = swim;
 	}
 	
-	public Dogs(boolean swim, String name, String color) {
+	public Dogs(boolean swim, String breed, String name) {
 		
-		this(swim, name, color, "NA");
+		this(swim, breed, name, "NA");
 	}
 	
-	public Dogs(boolean swim, String name) {
+	public Dogs(boolean swim, String breed) {
 		
-		this(swim, name, "NA", "NA");
+		this(swim, breed, "Fido", "NA");
 	}
 	
 	public Dogs(boolean swim) {
 		
-		this(swim, "Fido", "NA", "NA");
+		this(swim, "NA", "Fido", "NA");
 	}
 	
 	public Dogs() {
-		this(true, "Fido", "NA", "NA");
+		this(true, "NA", "Fido", "NA");
 	}
 	
 	public void goodBoy() {
@@ -73,6 +73,11 @@ public abstract class Dogs {
 
 	public void setSwim(boolean swim) {
 		this.swim = swim;
+	}
+
+	@Override
+	public String toString() {
+		return "Dog: name = " + this.name + ", breed = " + this.breed + ", color = " + this.color + ", swimmer = " + this.swim;
 	}
 	
 }

@@ -4,11 +4,15 @@ public class DogsDriver {
 
 	public static void main(String[] args) {
 		
-		System.out.println(new Pug(false, "Zeke", "Fawn", "Pug"));
+		System.out.println(new Pug(false, "Pug", "Zeke", "fawn"));
 		
-		System.out.println(new GoldenRetriever(true, "Buddy", "Gold", "Golden Retriever"));
+		System.out.println(new GoldenRetriever(true, "Golden Retriever", "Buddy", "gold"));
+		
+		System.out.println(new GoldenRetriever());
 		
 		System.out.println(new Pug());
+		
+		System.out.println(new Pug(true, "Pug", "Marshall", "black"));
 		
 		if (Pug.pugCounter < 2) {
 			System.out.println(Pug.pugCounter + " wittle puggie and counting!");
