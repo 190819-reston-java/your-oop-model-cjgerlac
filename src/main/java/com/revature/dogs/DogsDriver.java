@@ -15,16 +15,6 @@ public class DogsDriver {
 		
 		createArrayList();
 		
-	//	System.out.println(new Pug(false, "Pug", 7, "Zeke", "fawn"));
-		
-//		System.out.println(new GoldenRetriever(true, "Golden Retriever", 4, "Buddy", "gold"));
-	
-	//	System.out.println(new GoldenRetriever());
-		
-	//	System.out.println(new Pug());
-		
-	//	System.out.println(new Pug(true, "Pug", 0, "Marshall", "black"));
-		
 		if (Pug.pugCounter < 2) {
 			System.out.println(Pug.pugCounter + " wittle puggie and counting!");
 		} else {

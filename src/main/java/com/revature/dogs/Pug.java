@@ -35,7 +35,7 @@ public class Pug extends Dogs implements Flatface {
 	}
 	
 	public void flatFace() {
-		System.out.println(this.getName() + "");
+		System.out.println(this.getName() + "is flat faced!");
 	}
 	
 	
