@@ -4,15 +4,20 @@ public class Pug extends Dogs implements Flatface {
 
 	public static int pugCounter = 0;
 	
-	public Pug(boolean swim, String breed, String name, String color) {
+	public Pug(boolean swim, String breed, int age, String name, String color) {
 
-		super(false, breed, name, color);
+		super(false, breed, age, name, color);
 		pugCounter++;
 	}
 	
-	public Pug(boolean swim, String breed, String name) {
+	public Pug(boolean swim, String breed, int age, String name) {
 		
-		super(false, breed, name);
+		super(false, breed, age, name);
+		pugCounter++;
+	}
+	
+	public Pug(boolean swim, String breed, int age) {
+		super(false, breed, age);
 		pugCounter++;
 	}
 	
@@ -22,14 +27,16 @@ public class Pug extends Dogs implements Flatface {
 	}
 	
 	public Pug(boolean swim) {
-		this(false, "Pug");
+		this(swim, "Pug");
 	}
 	
 	public Pug() {
-		this(false);
+		this(true);
 	}
 	
 	public void flatFace() {
-		System.out.println("This little puggo has a flat face!");
+		System.out.println(this.getName() + "");
 	}
+	
+	
 }
