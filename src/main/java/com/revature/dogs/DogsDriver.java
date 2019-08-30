@@ -30,6 +30,7 @@ public class DogsDriver {
 
 	private static void createArrayList() {
 		
+		
 		List<Dogs> dogList = new ArrayList<Dogs>();
 		try {
 			dogList.add(new Pug(false, "Pug", 1/0, "Zeke", "fawn"));
@@ -44,5 +45,6 @@ public class DogsDriver {
 
 		SortedSet<Dogs> sortedDogSet = new TreeSet<Dogs>(dogList);
 		System.out.println(sortedDogSet);
+		
 	}
 }
